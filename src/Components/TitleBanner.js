@@ -7,6 +7,10 @@ const BannerCenter = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   background-color: #880e4f;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SpaceRight = styled.div`
@@ -38,7 +42,7 @@ const Name = styled.h2`
   text-align: center;
   color: #1c1c1c;
 
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
     font-size: 20px;
   }
 `;

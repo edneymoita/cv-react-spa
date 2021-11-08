@@ -13,6 +13,12 @@ const JobTitle = styled.div`
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   color: #880e4f;
   background-color: #f1f1f1;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
 `;
 
 const JobCompany = styled.div`
@@ -24,6 +30,12 @@ const JobCompany = styled.div`
   text-align: right;
   font-size: 12px;
   color: #880e4f;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
 `;
 
 const JobLocation = styled.p`
@@ -38,6 +50,12 @@ const JobDescription = styled.div`
   margin: 5px;
   padding: 5px;
   font-size: 12px;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
 `;
 
 function JobDetail(props) {
