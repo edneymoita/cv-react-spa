@@ -4,7 +4,6 @@ import styled from "styled-components";
 const DetailsPanel = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   background-color: rgba(136, 14, 79, 0.3);
   color: #1f1f1f;
   font-weight: 600;

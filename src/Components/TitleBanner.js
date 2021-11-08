@@ -4,7 +4,7 @@ import qrcode from "../Images/Qrcode.jpg";
 
 const BannerCenter = styled.div`
   display: grid;
-  grid-template-columns: 130px 1fr 130px;
+  grid-template-columns: 1fr 3fr 1fr;
   background-color: #880e4f;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
 `;
@@ -23,7 +23,7 @@ const Title = styled.div`
   margin: 20px;
   align-items: center;
   justify-content: space-around;
-  background-color: #fcfcfc;
+  background-color: #f1f1f1;
 `;
 
 const Square = styled.div`
@@ -37,6 +37,10 @@ const Name = styled.h2`
   letter-spacing: 4px;
   text-align: center;
   color: #1c1c1c;
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+  }
 `;
 
 const Subtitle = styled.p`

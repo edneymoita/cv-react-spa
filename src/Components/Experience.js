@@ -138,6 +138,91 @@ function Experience() {
         </p>
         <p>- Dar treinamento em diversos locais pelo país.</p>
       </JobDetail>
+      <JobDetail
+        title="PROFESSOR DE INGLÊS"
+        dates="AGO 2001 - DEZ 2001"
+        company="YÁZIGI INTERNEXUS"
+        location="BRASILIA - DF"
+        src={yazigi}
+        height="40px"
+        alt="Yázigi"
+      >
+        <p>
+          - Ensinar inglês para crianças e adolescentes, em turmas do básico ao
+          avançado, incluindo o preparatório para o “FCE - First Certificate in
+          English”.
+        </p>
+        <p>- Dar treinamento em diversos locais pelo país.</p>
+      </JobDetail>
+      <JobDetail
+        title="ANALISTA DE TI | DESENVOLVEDOR"
+        dates="MAR 2001 - JUL 2001"
+        company="COORDENAÇÃO NACIONAL DE AIDS/DST"
+        location="BRASILIA - DF"
+      >
+        <p>
+          - Dar manutenção no Sistema de Gerenciamento do Programa de Prevenção
+          e Tratamento da Aids, do Ministério da Saúde. trabalhando com Visual
+          C++ e SYBASE.
+        </p>
+      </JobDetail>
+      <JobDetail
+        title="ANALISTA DE REQUISITOS | DESENVOLVEDOR"
+        dates="OUT 2000 - FEV 2001"
+        company="FUNDAÇÃO SISTEL DE SEGURIDADE SOCIAL"
+        location="BRASÍLIA - DF"
+        src={sistel}
+        height="20px"
+        alt="Sistel"
+      >
+        <p>
+          - Participar como analista de requisitos da migração de sistemas
+          legado para Centura SQLWindows
+        </p>
+        <p>
+          - Desenvolver pequenos sistemas, usando Delphi e SYBASE, para auxiliar
+          nas tarefas internas.
+        </p>
+      </JobDetail>
+      <JobDetail
+        title="ANALISTA DE TI | DESENVOLVEDOR"
+        dates="NOV 1999 - OUT 2000"
+        company="VIA APIA INFORMÁTICA"
+        location="BRASÍLIA - DF"
+        src={viaappia}
+        height="40px"
+        alt="Via Appia"
+      >
+        <p>
+          - Desenvolver e manter o Sistema Thesaurus de automação de
+          bibliotecas, usando Centura SQLWindows, SYBASE e Oracle.
+        </p>
+      </JobDetail>
+      <JobDetail
+        title="ANALISTA DE TI | DESENVOLVEDOR"
+        dates="FEV 1998 - JUL 1999"
+        company="GAUSS INFORMÁTICA"
+        location="CAMPINA GRANDE - PB"
+      >
+        <p>
+          - Desenvolver e manter o Sistema Thesaurus de automação de
+          bibliotecas, usando Centura SQLWindows, SYBASE e Oracle.
+        </p>
+      </JobDetail>
+      <JobDetail
+        title="ANALISTA DE TI | DESENVOLVEDOR"
+        dates="JUN 1996 - MAR 1997"
+        company="LIGHT INFOCON TECNOLOGIA SA"
+        location="CAMPINA GRANDE - PB"
+        src={light_infocon}
+        height="30px"
+        alt="Light Infocon"
+      >
+        <p>
+          - Desenvolver e manter em C++ uma ferramenta de banco de dados textual
+          (LightBase for Windows).
+        </p>
+      </JobDetail>
     </DetailsContainer>
   );
 }
