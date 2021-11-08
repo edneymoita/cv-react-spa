@@ -21,6 +21,13 @@ code {
   margin: 20px 10px;
 }
 
+@media (min-width: 700px) {
+  .MenuItem {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
 .MenuItem:hover {
   color: #fff;
   transition: 1s;
