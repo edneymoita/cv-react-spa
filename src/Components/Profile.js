@@ -7,16 +7,13 @@ import mail from "../Images/mail.svg";
 import phone from "../Images/phone.svg";
 import linkedin from "../Images/linkedin.svg";
 import github from "../Images/github.svg";
+import photo from "../Images/foto-perfil.jpg";
 
 function Profile() {
   return (
     <DetailsContainer>
       <h3>Dados Pessoais</h3>
-      <img
-        className="avatar"
-        src="https://github.com/edneymoita.png"
-        alt="Edney Moita"
-      />
+      <img className="avatar" src={photo} alt="Edney Moita" />
       <Info src={user} alt="Idade">
         27/10/1972 - SOLTEIRO
       </Info>

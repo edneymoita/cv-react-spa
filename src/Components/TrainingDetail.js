@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import work from "../Images/work.png";
 
-const JobTitle = styled.div`
+const TrainingTitle = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 10px;
@@ -21,7 +20,7 @@ const JobTitle = styled.div`
   }
 `;
 
-const JobCompany = styled.div`
+const TrainingDate = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +28,6 @@ const JobCompany = styled.div`
   padding: 5px;
   text-align: right;
   font-size: 12px;
-  color: #880e4f;
 
   @media (max-width: 650px) {
     font-size: 10px;
@@ -38,14 +36,20 @@ const JobCompany = styled.div`
   }
 `;
 
-const JobLocation = styled.p`
+const TrainingDuration = styled.div`
   margin: 5px;
   padding: 5px;
-  text-align: right;
-  font-size: 10px;
+  text-align: left;
+  font-size: 12px;
+
+  @media (max-width: 650px) {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
 `;
 
-const JobDescription = styled.div`
+const TrainingDescription = styled.div`
   text-align: justify;
   margin: 5px;
   padding: 5px;
@@ -58,29 +62,15 @@ const JobDescription = styled.div`
   }
 `;
 
-function JobDetail(props) {
+function TrainingDetail(props) {
   return (
     <div>
-      <JobTitle>
-        <span>{props.title}</span> <span>({props.dates})</span>
-      </JobTitle>
-      <JobCompany>
-        {props.src ? (
-          <img
-            src={props.src}
-            alt={props.alt}
-            height={props.height}
-            width="auto"
-          />
-        ) : (
-          <img src={work} alt="Trabalho" height="40px" width="auto" />
-        )}
-        <span>{props.company}</span>
-      </JobCompany>
-      {props.location !== "" ? <JobLocation>{props.location}</JobLocation> : ""}
-      <JobDescription>{props.children}</JobDescription>
+      <TrainingTitle>{props.title}</TrainingTitle>
+      <TrainingDate>{props.dates}</TrainingDate>
+      <TrainingDuration>Carga horária: {props.duration}</TrainingDuration>
+      <TrainingDescription>{props.children}</TrainingDescription>
     </div>
   );
 }
 
-export default JobDetail;
+export default TrainingDetail;

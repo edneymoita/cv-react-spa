@@ -4,6 +4,7 @@ import DetailsContainer from "./DetailsContainer";
 function Skills() {
   return (
     <DetailsContainer>
+      <h3>Habilidades</h3>
       <ul>
         <li>C</li>
         <li>C++</li>

@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   body {
     width: 60%;
   }
@@ -25,12 +25,6 @@ code {
   cursor: pointer;
   border-radius: 15px;
   margin: 20px 10px;
-}
-
-@media (max-width: 600px) {
-  .MenuItem {
-    font-size: 14px;
-  }
 }
 
 .MenuItem:hover {
@@ -66,7 +60,11 @@ li {
   border: 1px solid #880e4f;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   color: #880e4f;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  @media (max-width: 650px) {
+    font-size: 12px;
+  }
 }
 
 h3 {
@@ -77,4 +75,27 @@ h3 {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   color: #880e4f;
   background-color: #f1f1f1;
+}
+
+@media (max-width: 650px) {
+  .MenuItem {
+    font-size: 14px;
+  }
+
+  .active .arrow {
+    visibility: visible;
+    transform: scale(0.7);
+  }
+
+  .avatar {
+    transform: scale(0.8);
+  }
+
+  img {
+    transform: scale(0.8);
+  }
+
+  h3 {
+    font-size: medium;
+  }
 }
