@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import qrcode from "../Images/Qrcode.jpg";
 
-const url =
-  "https://api.whatsapp.com/send?phone=5561986693548&text=Ol%C3%A1!%20Bem%20vindo%20a%20UpMedal!%20Em%20que%20podemos%20lhe%20ajudar%3F";
+const url = "https://api.whatsapp.com/send?phone=5561986693548";
 
 const BannerCenter = styled.div`
   display: grid;

@@ -8,7 +8,7 @@ const DetailsPanel = styled.div`
   color: #1f1f1f;
   font-weight: 600;
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px;
   box-sizing: border-box;
   height: 100%;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);

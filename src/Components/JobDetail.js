@@ -65,6 +65,7 @@ function JobDetail(props) {
     <div>
       <JobTitle
         id={props.id}
+        className="jobtitle"
         onClick={(e) => {
           if (document.getElementById(`company_${props.id}`)) {
             document
