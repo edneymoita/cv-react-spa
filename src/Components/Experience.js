@@ -9,6 +9,8 @@ import viaappia from "../Images/viaappia.png";
 import foton from "../Images/foton.png";
 import travel from "../Images/travel.png";
 import encontre from "../Images/encontre.png";
+import saude from "../Images/ministerio-da-saude.png";
+import previdencia from "../Images/previdencia.png";
 
 function Experience() {
   return (
@@ -17,10 +19,11 @@ function Experience() {
         title="PROPRIETÁRIO AGÊNCIA DE TURISMO"
         dates="FEV 2019 - ATUAL"
         company="ENCONTRE SUA VIAGEM (FRANQUEADO)"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
         src={encontre}
         height="30px"
         alt="Encontre Sua Viagem"
+        id="AG01"
       >
         <p>
           - Planejar, comprar e gerenciar viagens de clientes interessados nos
@@ -34,8 +37,9 @@ function Experience() {
         company="CASA / MUNDO"
         location=""
         src={travel}
-        height="30px"
+        height="40px"
         alt="Mundo"
+        id="PS01"
       >
         <p>
           Uma breve pausa para dedicação a família e a alguns projetos pessoais.
@@ -52,6 +56,7 @@ function Experience() {
         src={sistel}
         height="20px"
         alt="Sistel"
+        id="ST02"
       >
         <p>
           - Dar manutenção em Centura SQLWindows no sistema interno de
@@ -87,10 +92,11 @@ function Experience() {
         title="ANALISTA DE DESENVOLVIMENTO"
         dates="JUL 2005 - OUT 2005"
         company="FÓTON INFORMÁTICA"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
         src={foton}
         height="25px"
-        alt="Sistel"
+        alt="Foton"
+        id="FT01"
       >
         <p>
           - Desenvolvedor C na manutenção de um sistema bancário, em ambiente
@@ -101,10 +107,11 @@ function Experience() {
         title="ANALISTA DE TI | DESENVOLVEDOR"
         dates="OUT 2004 - JUL 2005"
         company="TATA CONSULTANCY SERVICE (TCS)"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
         src={tcs}
         height="25px"
-        alt="Sistel"
+        alt="TCS"
+        id="TC01"
       >
         <p>
           - Analista/Desenvolvedor de um software de distribuição de mídia de
@@ -116,7 +123,8 @@ function Experience() {
         title="ANALISTA DE TI | DESENVOLVEDOR"
         dates="MAI 2003 - OUT 2004"
         company="INTELIGÊNCIA INFORMÁTICA"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
+        id="IT01"
       >
         <p>
           - Analista/Desenvolvedor de uma aplicação de segurança e controle
@@ -129,7 +137,11 @@ function Experience() {
         title="ANALISTA DE TI | DESENVOLVEDOR | INSTRUTOR"
         dates="MAR 2002 - MAR 2003"
         company="SECRETARIA DE PREVIDÊNCIA SOCIAL - MPAS"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
+        src={previdencia}
+        height="35px"
+        alt="Min.Previdência"
+        id="MP01"
       >
         <p>
           - Atender demandas internas, desenvolvendo o Sistema Integrado de
@@ -142,10 +154,11 @@ function Experience() {
         title="PROFESSOR DE INGLÊS"
         dates="AGO 2001 - DEZ 2001"
         company="YÁZIGI INTERNEXUS"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
         src={yazigi}
         height="40px"
         alt="Yázigi"
+        id="YZ01"
       >
         <p>
           - Ensinar inglês para crianças e adolescentes, em turmas do básico ao
@@ -158,7 +171,11 @@ function Experience() {
         title="ANALISTA DE TI | DESENVOLVEDOR"
         dates="MAR 2001 - JUL 2001"
         company="COORDENAÇÃO NACIONAL DE AIDS/DST"
-        location="BRASILIA - DF"
+        location="BRASÍLIA - DF"
+        src={saude}
+        height="40px"
+        alt="Min.Saúde"
+        id="MS01"
       >
         <p>
           - Dar manutenção no Sistema de Gerenciamento do Programa de Prevenção
@@ -174,6 +191,7 @@ function Experience() {
         src={sistel}
         height="20px"
         alt="Sistel"
+        id="ST01"
       >
         <p>
           - Participar como analista de requisitos da migração de sistemas
@@ -192,6 +210,7 @@ function Experience() {
         src={viaappia}
         height="40px"
         alt="Via Appia"
+        id="VA01"
       >
         <p>
           - Desenvolver e manter o Sistema Thesaurus de automação de
@@ -203,6 +222,7 @@ function Experience() {
         dates="FEV 1998 - JUL 1999"
         company="GAUSS INFORMÁTICA"
         location="CAMPINA GRANDE - PB"
+        id="GA01"
       >
         <p>
           - Desenvolver e manter o Sistema Thesaurus de automação de
@@ -217,6 +237,7 @@ function Experience() {
         src={light_infocon}
         height="30px"
         alt="Light Infocon"
+        id="LI01"
       >
         <p>
           - Desenvolver e manter em C++ uma ferramenta de banco de dados textual

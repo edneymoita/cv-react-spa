@@ -44,12 +44,17 @@ a {
   align-self: flex-end;
 }
 
-.active .arrow {
+.active .mark {
   visibility: visible;
 }
 
-.arrow {
+.mark {
   visibility: hidden;
+}
+
+img:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
 }
 
 li {
@@ -98,4 +103,17 @@ h3 {
   h3 {
     font-size: medium;
   }
+}
+
+.hidden {
+  visibility: hidden;
+  max-height: 0px;
+}
+
+.arrow {
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
 }

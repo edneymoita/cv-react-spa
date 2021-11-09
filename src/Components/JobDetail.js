@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import work from "../Images/work.png";
+import work from "../Images/job.png";
+import "../index";
+import Arrow from "./Arrow";
 
 const JobTitle = styled.div`
   display: flex;
@@ -23,18 +25,16 @@ const JobTitle = styled.div`
 
 const JobCompany = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin: 5px;
+  margin: 0px;
   padding: 5px;
-  text-align: right;
+  text-align: center;
   font-size: 12px;
   color: #880e4f;
 
   @media (max-width: 650px) {
     font-size: 10px;
-    margin: 5px;
-    padding: 5px;
   }
 `;
 
@@ -43,6 +43,8 @@ const JobLocation = styled.p`
   padding: 5px;
   text-align: right;
   font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
 `;
 
 const JobDescription = styled.div`
@@ -61,10 +63,36 @@ const JobDescription = styled.div`
 function JobDetail(props) {
   return (
     <div>
-      <JobTitle>
+      <JobTitle
+        id={props.id}
+        onClick={(e) => {
+          if (document.getElementById(`company_${props.id}`)) {
+            document
+              .getElementById(`company_${props.id}`)
+              .classList.toggle("hidden");
+          }
+
+          if (document.getElementById(`location_${props.id}`)) {
+            document
+              .getElementById(`location_${props.id}`)
+              .classList.toggle("hidden");
+          }
+
+          if (document.getElementById(`description_${props.id}`)) {
+            document
+              .getElementById(`description_${props.id}`)
+              .classList.toggle("hidden");
+          }
+
+          document
+            .getElementById(`arrow_${props.id}`)
+            .classList.toggle("rotate");
+        }}
+      >
         <span>{props.title}</span> <span>({props.dates})</span>
+        <Arrow fill={"#1f1f1f"} id={`arrow_${props.id}`} />
       </JobTitle>
-      <JobCompany>
+      <JobCompany className="hidden" id={`company_${props.id}`}>
         {props.src ? (
           <img
             src={props.src}
@@ -75,10 +103,18 @@ function JobDetail(props) {
         ) : (
           <img src={work} alt="Trabalho" height="40px" width="auto" />
         )}
-        <span>{props.company}</span>
+        <p>{props.company}</p>
       </JobCompany>
-      {props.location !== "" ? <JobLocation>{props.location}</JobLocation> : ""}
-      <JobDescription>{props.children}</JobDescription>
+      {props.location !== "" ? (
+        <JobLocation className="hidden" id={`location_${props.id}`}>
+          {props.location}
+        </JobLocation>
+      ) : (
+        ""
+      )}
+      <JobDescription className="hidden" id={`description_${props.id}`}>
+        {props.children}
+      </JobDescription>
     </div>
   );
 }

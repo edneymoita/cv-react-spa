@@ -1,8 +1,8 @@
 import React from "react";
 
-function Chevron(props) {
+function Mark(props) {
   return (
-    <div className="arrow">
+    <div className="mark">
       <svg
         aria-hidden="true"
         focusable="false"
@@ -26,4 +26,4 @@ function Chevron(props) {
   );
 }
 
-export default Chevron;
+export default Mark;

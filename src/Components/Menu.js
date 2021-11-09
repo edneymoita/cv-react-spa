@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Chevron from "./Chevron";
+import Mark from "./Mark";
 import { Routes, Route, NavLink, HashRouter } from "react-router-dom";
 import Initial from "./Initial";
 import Profile from "./Profile";
@@ -25,7 +25,7 @@ function MenuItem(props) {
   return (
     <div className="MenuItem">
       <p>{props.title}</p>
-      <Chevron fill={"#1f1f1f"} />
+      <Mark fill={"#1f1f1f"} />
     </div>
   );
 }
