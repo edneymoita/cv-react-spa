@@ -45,7 +45,7 @@ function Menu() {
       <HashRouter>
         <label
           for="toggle"
-          onMouseOver={
+          onMouseEnter={
             !isMobile
               ? () => {
                   document.getElementById("toggle").checked = true;
@@ -60,6 +60,13 @@ function Menu() {
           onClick={() => {
             document.getElementById("toggle").checked = false;
           }}
+          onMouseLeave={
+            !isMobile
+              ? () => {
+                  document.getElementById("toggle").checked = false;
+                }
+              : false
+          }
         >
           <NavLink to="/">
             <MenuItem title="Início" />
