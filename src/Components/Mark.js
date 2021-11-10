@@ -1,9 +1,11 @@
 import React from "react";
+import star from "../Images/star.png";
 
 function Mark(props) {
   return (
     <div className="mark">
-      <svg
+      <img src={star} alt="star" />
+      {/* <svg
         aria-hidden="true"
         focusable="false"
         data-prefix="fas"
@@ -21,7 +23,7 @@ function Mark(props) {
           fill={props.fill}
           d="M12 10.994H8v2h4V16l4.005-4.005L12 7.991z"
         ></path>
-      </svg>
+      </svg> */}
     </div>
   );
 }

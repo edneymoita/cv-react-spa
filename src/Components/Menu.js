@@ -10,8 +10,9 @@ import Languages from "./Languages";
 import Experience from "./Experience";
 import Training from "./Training";
 import "../index";
+import menu from "../Images/menu.png";
 
-const MenuPanel = styled.div`
+const MenuPanel = styled.aside`
   background-color: rgba(136, 14, 79, 0.7);
   color: #1f1f1f;
   font-weight: 600;
@@ -19,6 +20,11 @@ const MenuPanel = styled.div`
   padding: 5px;
   box-sizing: border-box;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+
+  /* position: fixed;
+  left: -370px;
+
+  transition: 0.6s all; */
 `;
 
 function MenuItem(props) {
@@ -34,6 +40,10 @@ function Menu() {
   return (
     <>
       <HashRouter>
+        {/* <label for="toggle">
+          <img src={menu} alt="menu" />
+        </label>
+        <input type="checkbox" id="toggle" /> */}
         <MenuPanel>
           <NavLink to="/">
             <MenuItem title="Início" />

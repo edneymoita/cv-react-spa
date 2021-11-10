@@ -1,9 +1,11 @@
 import React from "react";
+import arrow from "../Images/arrow.png";
 
 function Arrow(props) {
   return (
     <div className="arrow" id={props.id}>
-      <svg
+      <img src={arrow} alt="arrow" />
+      {/* <svg
         aria-hidden="true"
         focusable="false"
         data-prefix="fas"
@@ -17,7 +19,7 @@ function Arrow(props) {
           fill={props.fill}
           d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
         ></path>
-      </svg>
+      </svg> */}
     </div>
   );
 }
