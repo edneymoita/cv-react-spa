@@ -10,7 +10,7 @@ import Languages from "./Languages";
 import Experience from "./Experience";
 import Training from "./Training";
 import "../index";
-import menu from "../Images/menu.png";
+// import menu from "../Images/menu.png";
 
 const MenuPanel = styled.aside`
   background-color: rgba(136, 14, 79, 0.7);
