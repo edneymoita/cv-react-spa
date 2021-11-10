@@ -24,11 +24,12 @@ code {
   align-items: center;
   cursor: pointer;
   border-radius: 15px;
-  margin: 20px 10px;
+  padding: 5px 5px;
+  color: #f1f1f1;
 }
 
 .MenuItem:hover {
-  color: #fff;
+  color: #000;
   transition: 1s;
 }
 
@@ -122,11 +123,18 @@ h3 {
   transform: rotate(90deg);
 }
 
-/* label[for="toggle"] {
+label[for="toggle"] {
   position: absolute;
+  top: 0px;
   left: 5px;
   z-index: 1;
   cursor: pointer;
+  color: #fff;
+}
+
+.menu {
+  height: 30px;
+  width: auto;
 }
 
 input[type="checkbox"] {
@@ -136,4 +144,4 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked + aside {
   left: 0px;
-} */
+}

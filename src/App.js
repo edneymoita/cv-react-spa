@@ -2,7 +2,6 @@ import "./App.css";
 import TitleBanner from "./Components/TitleBanner";
 import Menu from "./Components/Menu";
 import Body from "./Components/Body";
-// import Details from "./Components/Details";
 
 function App() {
   return (

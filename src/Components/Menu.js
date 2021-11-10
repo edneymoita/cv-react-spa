@@ -10,21 +10,24 @@ import Languages from "./Languages";
 import Experience from "./Experience";
 import Training from "./Training";
 import "../index";
-// import menu from "../Images/menu.png";
+import menu from "../Images/menu.png";
+import { isMobile } from "react-device-detect";
 
 const MenuPanel = styled.aside`
-  background-color: rgba(136, 14, 79, 0.7);
+  background-color: rgba(136, 14, 79, 0.9);
   color: #1f1f1f;
   font-weight: 600;
   text-align: left;
-  padding: 5px;
+  padding: 30px 10px;
   box-sizing: border-box;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+  height: 100%;
 
-  /* position: fixed;
+  position: fixed;
+  top: 0px;
   left: -370px;
 
-  transition: 0.6s all; */
+  transition: 0.6s all;
 `;
 
 function MenuItem(props) {
@@ -40,11 +43,24 @@ function Menu() {
   return (
     <>
       <HashRouter>
-        {/* <label for="toggle">
-          <img src={menu} alt="menu" />
+        <label
+          for="toggle"
+          onMouseOver={
+            !isMobile
+              ? () => {
+                  document.getElementById("toggle").checked = true;
+                }
+              : false
+          }
+        >
+          <img className="menu" src={menu} alt="menu" />
         </label>
-        <input type="checkbox" id="toggle" /> */}
-        <MenuPanel>
+        <input type="checkbox" id="toggle" />
+        <MenuPanel
+          onClick={() => {
+            document.getElementById("toggle").checked = false;
+          }}
+        >
           <NavLink to="/">
             <MenuItem title="Início" />
           </NavLink>

@@ -12,6 +12,7 @@ const BannerCenter = styled.div`
 
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
+    padding-top: 20px;
   }
 `;
 

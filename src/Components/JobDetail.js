@@ -70,7 +70,7 @@ function JobDetail(props) {
       <JobTitle
         id={props.id}
         className="jobtitle"
-        onClick={(e) => {
+        onClick={() => {
           if (document.getElementById(`more_${props.id}`)) {
             document
               .getElementById(`more_${props.id}`)
