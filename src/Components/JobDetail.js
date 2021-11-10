@@ -7,6 +7,7 @@ import Arrow from "./Arrow";
 const JobTitle = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 10px;
   padding: 10px;
   font-size: 12px;
@@ -14,7 +15,7 @@ const JobTitle = styled.div`
   border: 1px solid #880e4f;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   color: #880e4f;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.5);
 
   @media (max-width: 650px) {
     font-size: 10px;
@@ -82,8 +83,8 @@ function JobDetail(props) {
             .classList.toggle("rotate");
         }}
       >
-        <span>{props.title}</span> <span>({props.dates})</span>
-        <Arrow fill={"#1f1f1f"} id={`arrow_${props.id}`} />
+        <div>{props.title}</div> <div className="date">({props.dates})</div>
+        <Arrow id={`arrow_${props.id}`} />
       </JobTitle>
       <JobMore className="hidden" id={`more_${props.id}`}>
         <JobCompany id={`company_${props.id}`}>

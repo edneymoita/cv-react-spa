@@ -123,6 +123,10 @@ h3 {
   transform: rotate(90deg);
 }
 
+.date {
+  margin-left: auto;
+}
+
 label[for="toggle"] {
   position: absolute;
   top: 0px;
