@@ -1,9 +1,10 @@
 import React from "react";
 import DetailsContainer from "./DetailsContainer";
 import styled from "styled-components";
+import PageTitle from "./PageTitle";
+import PageContainer from "./PageContainer";
 
 const FormationYear = styled.p`
-  margin: 12px 30px;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #880e4f;
@@ -19,17 +20,17 @@ const FormationYear = styled.p`
 function Formation() {
   return (
     <DetailsContainer>
-      <h3>Formação</h3>
-      <FormationYear>1995</FormationYear>
-      <p>
-        Bacharel em Ciência da Computação Universidade Federal de Campina Grande
-        (antiga UFPB - Campus II)
-      </p>
-      <FormationYear>1997</FormationYear>
-      <p>
-        Certificate III in Business Russo Institute of Technology Brisbane,
-        Queensland - Austrália
-      </p>
+      <PageTitle>Formação</PageTitle>
+      <PageContainer>
+        <FormationYear>1995</FormationYear>
+        <p>Bacharel em Ciência da Computação</p>
+        <p>Universidade Federal de Campina Grande</p>
+        <p>(antiga UFPB - Campus II)</p>
+        <FormationYear>1997</FormationYear>
+        <p>Certificate III in Business</p>
+        <p>Russo Institute of Technology</p>
+        <p>Brisbane, Queensland - Austrália</p>
+      </PageContainer>
     </DetailsContainer>
   );
 }

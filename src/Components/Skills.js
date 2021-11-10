@@ -1,6 +1,8 @@
 import React from "react";
 import DetailsContainer from "./DetailsContainer";
 import styled from "styled-components";
+import PageTitle from "./PageTitle";
+import PageContainer from "./PageContainer";
 
 const SkillList = styled.div`
   display: flex;
@@ -25,31 +27,33 @@ const SkillDetail = styled.p`
 function Skills() {
   return (
     <DetailsContainer>
-      <h3>Habilidades</h3>
-      <SkillList>
-        <SkillDetail>C</SkillDetail>
-        <SkillDetail>C++</SkillDetail>
-        <SkillDetail>SQL</SkillDetail>
-        <SkillDetail>DELPHI</SkillDetail>
-        <SkillDetail>CENTURA</SkillDetail>
-        <SkillDetail>SQLWINDOWS</SkillDetail>
-        <SkillDetail>PREVIDÊNCIA PRIVADA</SkillDetail>
-        <SkillDetail>TRELLO</SkillDetail>
-        <SkillDetail>NOTION</SkillDetail>
-        <SkillDetail>CANVA</SkillDetail>
-        <SkillDetail>SLACK</SkillDetail>
-        <SkillDetail>DISCORD</SkillDetail>
-        <SkillDetail>JAVASCRIPT</SkillDetail>
-        <SkillDetail>CSS</SkillDetail>
-        <SkillDetail>HTML</SkillDetail>
-        <SkillDetail>REACT</SkillDetail>
-        <SkillDetail>NODE.JS</SkillDetail>
-        <SkillDetail>TYPESCRIPT</SkillDetail>
-        <SkillDetail>GRAPHQL</SkillDetail>
-        <SkillDetail>GIT</SkillDetail>
-        <SkillDetail>ÁGIL</SkillDetail>
-        <SkillDetail>DEVOPS</SkillDetail>
-      </SkillList>
+      <PageTitle>Habilidades</PageTitle>
+      <PageContainer>
+        <SkillList>
+          <SkillDetail>C</SkillDetail>
+          <SkillDetail>C++</SkillDetail>
+          <SkillDetail>SQL</SkillDetail>
+          <SkillDetail>DELPHI</SkillDetail>
+          <SkillDetail>CENTURA</SkillDetail>
+          <SkillDetail>SQLWINDOWS</SkillDetail>
+          <SkillDetail>PREVIDÊNCIA PRIVADA</SkillDetail>
+          <SkillDetail>TRELLO</SkillDetail>
+          <SkillDetail>NOTION</SkillDetail>
+          <SkillDetail>CANVA</SkillDetail>
+          <SkillDetail>SLACK</SkillDetail>
+          <SkillDetail>DISCORD</SkillDetail>
+          <SkillDetail>JAVASCRIPT</SkillDetail>
+          <SkillDetail>CSS</SkillDetail>
+          <SkillDetail>HTML</SkillDetail>
+          <SkillDetail>REACT</SkillDetail>
+          <SkillDetail>NODE.JS</SkillDetail>
+          <SkillDetail>TYPESCRIPT</SkillDetail>
+          <SkillDetail>GRAPHQL</SkillDetail>
+          <SkillDetail>GIT</SkillDetail>
+          <SkillDetail>ÁGIL</SkillDetail>
+          <SkillDetail>DEVOPS</SkillDetail>
+        </SkillList>
+      </PageContainer>
     </DetailsContainer>
   );
 }

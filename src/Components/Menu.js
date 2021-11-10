@@ -84,7 +84,7 @@ function Menu() {
             <MenuItem title="Idiomas" />
           </NavLink>
           <NavLink to="/experiencia">
-            <MenuItem title="Experiência" />
+            <MenuItem title="Experiências Profissionais" />
           </NavLink>
           <NavLink to="/treinamentos-recentes">
             <MenuItem title="Treinamentos Recentes" />

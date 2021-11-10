@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import DetailsContainer from "./DetailsContainer";
-
-const LanguageList = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import PageContainer from "./PageContainer";
+import PageTitle from "./PageTitle";
 
 const LanguageDetail = styled.p`
   margin: 12px;
@@ -25,14 +21,14 @@ const LanguageDetail = styled.p`
 function Languages() {
   return (
     <DetailsContainer>
-      <h3>Idiomas</h3>
-      <LanguageList>
+      <PageTitle>Idiomas</PageTitle>
+      <PageContainer>
         <LanguageDetail>PORTUGUÊS - NATIVO</LanguageDetail>
         <LanguageDetail>INGLÊS - FLUENTE (IELTS 7,5)</LanguageDetail>
         <LanguageDetail>FRANCÊS - AVANÇADO</LanguageDetail>
         <LanguageDetail>ESPANHOL - BÁSICO</LanguageDetail>
         <LanguageDetail>JAPONÊS - BÁSICO (EM ESTUDO)</LanguageDetail>
-      </LanguageList>
+      </PageContainer>
     </DetailsContainer>
   );
 }

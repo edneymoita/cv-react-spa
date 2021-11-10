@@ -11,7 +11,7 @@ const TrainingTitle = styled.div`
   border: 1px solid #880e4f;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   color: #880e4f;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.5);
 
   @media (max-width: 650px) {
     font-size: 10px;
@@ -27,7 +27,7 @@ const TrainingDate = styled.div`
   margin: 5px;
   padding: 5px;
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
 
   @media (max-width: 650px) {
     font-size: 10px;
