@@ -10,7 +10,6 @@ import Languages from "./Languages";
 import Experience from "./Experience";
 import Training from "./Training";
 import "../index";
-import menu from "../Images/menu.png";
 import { isMobile } from "react-device-detect";
 
 const MenuPanel = styled.aside`
@@ -21,12 +20,8 @@ const MenuPanel = styled.aside`
   padding: 30px 10px;
   box-sizing: border-box;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
-  height: 100%;
   z-index: 1;
-
-  position: fixed;
-  top: 0px;
-  left: -370px;
+  height: 100%;
 
   transition: 0.6s all;
 `;
@@ -35,7 +30,7 @@ function MenuItem(props) {
   return (
     <div className="MenuItem">
       <p>{props.title}</p>
-      <Mark fill={"#1f1f1f"} />
+      <Mark />
     </div>
   );
 }
@@ -44,33 +39,22 @@ function Menu() {
   return (
     <>
       <HashRouter>
-        <label
-          htmlFor="toggle"
-          onMouseEnter={
-            !isMobile
-              ? () => {
-                  document.getElementById("toggle").checked = true;
-                }
-              : false
-          }
-        >
-          <img className="menu" src={menu} alt="menu" />
-        </label>
-        <input type="checkbox" id="toggle" />
         <MenuPanel
+          className="menuPanel"
+          id="menuPanel"
           onClick={() => {
-            document.getElementById("toggle").checked = false;
+            document.getElementById("menuPanel").classList.remove("show");
           }}
           onMouseLeave={
             !isMobile
               ? () => {
-                  document.getElementById("toggle").checked = false;
+                  document.getElementById("menuPanel").classList.remove("show");
                 }
               : false
           }
         >
           <NavLink to="/">
-            <MenuItem title="Início" />
+            <MenuItem title="Apresentação" />
           </NavLink>
           <NavLink to="/perfil">
             <MenuItem title="Perfil" />

@@ -14,7 +14,7 @@ import PageContainer from "./PageContainer";
 function Profile() {
   return (
     <DetailsContainer>
-      <PageTitle>Dados Pessoais</PageTitle>
+      <PageTitle>Perfil</PageTitle>
       <PageContainer>
         <img className="avatar" src={photo} alt="Edney Moita" />
         <Info src={user} alt="Idade">

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import qrcode from "../Images/Qrcode.jpg";
+import "../index";
 
 const url = "https://api.whatsapp.com/send?phone=5561986693548";
 
@@ -8,7 +9,7 @@ const BannerCenter = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   background-color: #880e4f;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
@@ -31,7 +32,7 @@ const Title = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: #f1f1f1;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 `;
 
 const Square = styled.div`
