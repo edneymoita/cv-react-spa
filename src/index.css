@@ -108,6 +108,15 @@ h3 {
   h3 {
     font-size: medium;
   }
+
+  .menuPanel {
+    top: 0px;
+    left: -370px;
+  }
+
+  .show {
+    left: 0px;
+  }
 }
 
 .hidden {
@@ -127,25 +136,17 @@ h3 {
   margin-left: auto;
 }
 
-label[for="toggle"] {
-  position: absolute;
-  top: 0px;
-  left: 5px;
-  z-index: 2;
-  cursor: pointer;
-  color: #fff;
-}
-
 .menu {
   height: 30px;
   width: auto;
+  cursor: pointer;
 }
 
-input[type="checkbox"] {
-  position: absolute;
-  top: -100px;
+.menuPanel {
+  position: fixed;
+  top: -1000px;
 }
 
-input[type="checkbox"]:checked + aside {
-  left: 0px;
+.show {
+  top: 0px;
 }
