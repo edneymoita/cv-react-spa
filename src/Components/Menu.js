@@ -22,6 +22,7 @@ const MenuPanel = styled.aside`
   box-sizing: border-box;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
   height: 100%;
+  z-index: 1;
 
   position: fixed;
   top: 0px;
@@ -44,7 +45,7 @@ function Menu() {
     <>
       <HashRouter>
         <label
-          for="toggle"
+          htmlFor="toggle"
           onMouseEnter={
             !isMobile
               ? () => {
