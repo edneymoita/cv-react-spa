@@ -68,10 +68,10 @@ const WhatsApp = styled.img`
 function TitleBanner() {
   return (
     <>
-      <BannerCenter>
+      <BannerCenter className="Banner">
         <div></div>
-        <Title>
-          <Square>
+        <Title className="title">
+          <Square className="square">
             <Name>Edney Farias Moita</Name>
             <Subtitle>Analista de TI</Subtitle>
             <Subtitle>Desenvolvedor</Subtitle>

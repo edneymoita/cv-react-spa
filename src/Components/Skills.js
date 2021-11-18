@@ -30,28 +30,28 @@ function Skills() {
       <PageTitle>Habilidades</PageTitle>
       <PageContainer>
         <SkillList>
-          <SkillDetail>C</SkillDetail>
-          <SkillDetail>C++</SkillDetail>
-          <SkillDetail>SQL</SkillDetail>
-          <SkillDetail>DELPHI</SkillDetail>
-          <SkillDetail>CENTURA</SkillDetail>
-          <SkillDetail>SQLWINDOWS</SkillDetail>
-          <SkillDetail>PREVIDÊNCIA PRIVADA</SkillDetail>
-          <SkillDetail>TRELLO</SkillDetail>
-          <SkillDetail>NOTION</SkillDetail>
-          <SkillDetail>CANVA</SkillDetail>
-          <SkillDetail>SLACK</SkillDetail>
-          <SkillDetail>DISCORD</SkillDetail>
-          <SkillDetail>JAVASCRIPT</SkillDetail>
-          <SkillDetail>CSS</SkillDetail>
-          <SkillDetail>HTML</SkillDetail>
-          <SkillDetail>REACT</SkillDetail>
-          <SkillDetail>NODE.JS</SkillDetail>
-          <SkillDetail>TYPESCRIPT</SkillDetail>
-          <SkillDetail>GRAPHQL</SkillDetail>
-          <SkillDetail>GIT</SkillDetail>
-          <SkillDetail>ÁGIL</SkillDetail>
-          <SkillDetail>DEVOPS</SkillDetail>
+          <SkillDetail className="detail">C</SkillDetail>
+          <SkillDetail className="detail">C++</SkillDetail>
+          <SkillDetail className="detail">SQL</SkillDetail>
+          <SkillDetail className="detail">DELPHI</SkillDetail>
+          <SkillDetail className="detail">CENTURA</SkillDetail>
+          <SkillDetail className="detail">SQLWINDOWS</SkillDetail>
+          <SkillDetail className="detail">PREVIDÊNCIA PRIVADA</SkillDetail>
+          <SkillDetail className="detail">TRELLO</SkillDetail>
+          <SkillDetail className="detail">NOTION</SkillDetail>
+          <SkillDetail className="detail">CANVA</SkillDetail>
+          <SkillDetail className="detail">SLACK</SkillDetail>
+          <SkillDetail className="detail">DISCORD</SkillDetail>
+          <SkillDetail className="detail">JAVASCRIPT</SkillDetail>
+          <SkillDetail className="detail">CSS</SkillDetail>
+          <SkillDetail className="detail">HTML</SkillDetail>
+          <SkillDetail className="detail">REACT</SkillDetail>
+          <SkillDetail className="detail">NODE.JS</SkillDetail>
+          <SkillDetail className="detail">TYPESCRIPT</SkillDetail>
+          <SkillDetail className="detail">GRAPHQL</SkillDetail>
+          <SkillDetail className="detail">GIT</SkillDetail>
+          <SkillDetail className="detail">ÁGIL</SkillDetail>
+          <SkillDetail className="detail">DEVOPS</SkillDetail>
         </SkillList>
       </PageContainer>
     </DetailsContainer>

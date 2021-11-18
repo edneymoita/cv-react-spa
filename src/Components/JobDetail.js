@@ -87,7 +87,7 @@ function JobDetail(props) {
         <Arrow id={`arrow_${props.id}`} />
       </JobTitle>
       <JobMore className="hidden" id={`more_${props.id}`}>
-        <JobCompany id={`company_${props.id}`}>
+        <JobCompany id={`company_${props.id}`} className="jobcompany">
           {props.src ? (
             <img
               src={props.src}

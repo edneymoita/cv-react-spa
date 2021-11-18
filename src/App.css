@@ -3,6 +3,10 @@
   background-color: #880e4f;
 }
 
+.darkMode .App {
+  background-color: #3d0522;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

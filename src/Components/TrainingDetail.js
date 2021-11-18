@@ -65,7 +65,7 @@ const TrainingDescription = styled.div`
 function TrainingDetail(props) {
   return (
     <div>
-      <TrainingTitle>{props.title}</TrainingTitle>
+      <TrainingTitle className="trainingtitle">{props.title}</TrainingTitle>
       <TrainingDate>{props.dates}</TrainingDate>
       <TrainingDuration>Carga horária: {props.duration}</TrainingDuration>
       <TrainingDescription>{props.children}</TrainingDescription>
