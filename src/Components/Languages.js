@@ -23,11 +23,15 @@ function Languages() {
     <DetailsContainer>
       <PageTitle>Idiomas</PageTitle>
       <PageContainer>
-        <LanguageDetail>PORTUGUÊS - NATIVO</LanguageDetail>
-        <LanguageDetail>INGLÊS - FLUENTE (IELTS 7,5)</LanguageDetail>
-        <LanguageDetail>FRANCÊS - AVANÇADO</LanguageDetail>
-        <LanguageDetail>ESPANHOL - BÁSICO</LanguageDetail>
-        <LanguageDetail>JAPONÊS - BÁSICO (EM ESTUDO)</LanguageDetail>
+        <LanguageDetail className="detail">PORTUGUÊS - NATIVO</LanguageDetail>
+        <LanguageDetail className="detail">
+          INGLÊS - FLUENTE (IELTS 7,5)
+        </LanguageDetail>
+        <LanguageDetail className="detail">FRANCÊS - AVANÇADO</LanguageDetail>
+        <LanguageDetail className="detail">ESPANHOL - BÁSICO</LanguageDetail>
+        <LanguageDetail className="detail">
+          JAPONÊS - BÁSICO (EM ESTUDO)
+        </LanguageDetail>
       </PageContainer>
     </DetailsContainer>
   );

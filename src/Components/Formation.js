@@ -22,11 +22,11 @@ function Formation() {
     <DetailsContainer>
       <PageTitle>Formação</PageTitle>
       <PageContainer>
-        <FormationYear>1995</FormationYear>
+        <FormationYear className="formationyear">1995</FormationYear>
         <p>Bacharel em Ciência da Computação</p>
         <p>Universidade Federal de Campina Grande</p>
         <p>(antiga UFPB - Campus II)</p>
-        <FormationYear>1997</FormationYear>
+        <FormationYear className="formationyear">1997</FormationYear>
         <p>Certificate III in Business</p>
         <p>Russo Institute of Technology</p>
         <p>Brisbane, Queensland - Austrália</p>
