@@ -155,6 +155,24 @@ h3 {
   background-color: #3d0522;
 }
 
+.darkMode .title {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.darkMode .square {
+  border: 1px solid #3d0522;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.darkMode .buttonMode {
+  background-color: #880e4f;
+  border: 1px solid #f1f1f1;
+}
+
+.darkMode .menuPanel {
+  background-color: rgba(61, 5, 34, 0.9);
+}
+
 .darkMode li {
   border: 1px solid #3d0522;
   color: #3d0522;
@@ -164,6 +182,12 @@ h3 {
 .darkMode h3 {
   border: 1px solid #3d0522;
   color: #3d0522;
+  background-color: rgba(61, 5, 34, 0.3);
+}
+
+.darkMode .formationyear {
+  border: 1px solid #3d0522;
+  color: #3d0522;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -171,10 +195,6 @@ h3 {
   border: 1px solid #3d0522;
   color: #3d0522;
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.darkMode .menuPanel {
-  background-color: rgba(61, 5, 34, 0.9);
 }
 
 .darkMode .jobcompany {
@@ -190,25 +210,5 @@ h3 {
 .darkMode .trainingtitle {
   border: 1px solid #3d0522;
   color: #3d0522;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.darkMode .square {
-  border: 1px solid #3d0522;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.darkMode .formationyear {
-  border: 1px solid #3d0522;
-  color: #3d0522;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.darkMode .buttonMode {
-  background-color: #880e4f;
-  border: 1px solid #f1f1f1;
-}
-
-.darkMode .title {
   background-color: rgba(255, 255, 255, 0.3);
 }
