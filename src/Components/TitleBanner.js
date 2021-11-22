@@ -31,7 +31,7 @@ const Title = styled.div`
   margin: 20px;
   align-items: center;
   justify-content: space-around;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 `;
 
@@ -40,6 +40,7 @@ const Square = styled.div`
   border-radius: 4px;
   padding: 20px;
   align-items: end;
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 `;
 
