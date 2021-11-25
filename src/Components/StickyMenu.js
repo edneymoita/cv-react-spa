@@ -1,6 +1,7 @@
 import { isMobile } from "react-device-detect";
 import menu from "../Images/menu.png";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const StickyBar = styled.div`
   display: flex;
@@ -42,6 +43,13 @@ const ChangeMode = styled.input`
 `;
 
 function StickyMenu() {
+  useEffect(() => {
+    if (localStorage.getItem("viewMode") === "darkMode") {
+      document.body.classList.toggle("darkMode");
+      document.getElementById("changeMode").value = "Modo claro";
+    }
+  });
+
   return (
     <StickyBar>
       <Menu
@@ -67,9 +75,13 @@ function StickyMenu() {
         onClick={() => {
           document.body.classList.toggle("darkMode");
 
-          if (document.getElementById("changeMode").value === "Modo escuro")
+          if (document.getElementById("changeMode").value === "Modo escuro") {
             document.getElementById("changeMode").value = "Modo claro";
-          else document.getElementById("changeMode").value = "Modo escuro";
+            localStorage.setItem("viewMode", "darkMode");
+          } else {
+            document.getElementById("changeMode").value = "Modo escuro";
+            localStorage.setItem("viewMode", "lightMode");
+          }
         }}
       />
     </StickyBar>
